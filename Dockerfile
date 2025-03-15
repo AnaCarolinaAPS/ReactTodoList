@@ -27,5 +27,11 @@ ENV CHOKIDAR_USEPOLLING=1
 #Faz a instalação dos arquivos do React
 RUN npm install 
 
+#Faz a instalação dos arquivos do pacote CryptoJS
+RUN npm install crypto-js
+
+#Faz a instalação do plugin svgr para trabalhar com imagens como vetores
+RUN npm install vite-plugin-svgr
+
 # Comando para iniciar o servidor de desenvolvimento
 CMD ["npm", "run", "dev"]
